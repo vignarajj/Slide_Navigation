@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SlideNavigation</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_rateapp">Rate App</string>
+    <string name="action_refresh">Refresh</string>
+        <string name="hints">Enter the Numbers between 1 to 12 digit</string>
+    <string name="convert">Convert</string>
+    <string-array name="nav_drawer_items">
+        <item>Page 1</item>
+        <item>Page 2</item>
+        <item>Page 3</item>
+    </string-array>
+<string name="desc1">
+    Google is an American multinational corporation specializing in Internet-related services and products. These include online advertising technologies, search, cloud computing, and software. Most of its profits are derived from AdWords.
+Google was founded by Larry Page and Sergey Brin while they were Ph.D. students at Stanford University. Together they own about 14 percent of its shares but control 56 of the stockholder voting power through supervoting stock. They incorporated Google as a privately held company on September 4, 1998. An initial public offering followed on August 19, 2004. Its mission statement from the outset was "to organize the world's information and make it universally accessible and useful", and its unofficial slogan was "Don't be evil". In 2006 Google moved to headquarters in Mountain View, California, nicknamed the Googleplex.
+</string>
+<string name="desc2">
+    Facebook is an online social networking service. Its name comes from a colloquialism for the directory given to students at some American universities. Facebook was founded on February 4, 2004 by Mark Zuckerberg with his college roommates and fellow Harvard University students Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes. The founders had initially limited the website s membership to Harvard students, but later expanded it to colleges in the Boston area, the Ivy League, and Stanford University. It gradually added support for students at various other universities and later to their high-school students. Facebook now allows anyone who claims to be at least 13 years old worldwide to become a registered user of the website, even though proof isn t required.
+
+Users must register before using the site, after which they may create a personal profile, add other users as friends, exchange messages, and receive automatic notifications when they update their profile. Additionally, users may join common-interest user groups, organized by workplace, school or college, or other characteristics, and categorize their friends into lists such as "People From Work" or "Close Friends". In September 2012, Facebook had over one billion active users, of which approximately 9% were fake. In 2012, Facebook was adding about half a petabyte of data every 24 hours, amounting to about 180 petabytes per year.
+</string>
+<string name="desc3">
+    Microsoft Corporation is an American multinational corporation headquartered in Redmond, Washington, that develops, manufactures, licenses, supports and sells computer software, consumer electronics and personal computers and services. Its best known software products are the Microsoft Windows line of operating systems, Microsoft Office office suite, and Internet Explorer web browser. Its flagship hardware products are Xbox game console and the Microsoft Surface series of tablets. It is the world s largest software maker measured by revenues. It is also one of the world s most valuable companies.
+
+Microsoft was founded by Bill Gates and Paul Allen on April 4, 1975 to develop and sell BASIC interpreters for Altair 8800. It rose to dominate the personal computer operating system market with MS-DOS in the mid-1980s, followed by the Microsoft Windows. The company s 1986 initial public offering, and subsequent rise in its share price, created an estimated three billionaires and 12,000 millionaires from Microsoft employees. Since the 1990s, it has increasingly diversified from the operating system market and has made a number of corporate acquisitions. In May 2011, Microsoft acquired Skype Technologies for $8.5 billion in its largest acquisition to date.
+
+As of 2013, Microsoft is market dominant in both the IBM PC-compatible operating system and office software suite markets (the latter with Microsoft Office). The company also produces a wide range of other software for desktops and servers, and is active in areas including Internet search (with Bing), the video game industry (with the Xbox, Xbox 360 and Xbox One consoles), the digital services market (through MSN), and mobile phones (via the Windows Phone OS). In June 2012, Microsoft entered the personal computer production market for the first time, with the launch of the Microsoft Surface, a line of tablet computers.
+</string>
+<string name="chint1">Set the background color for ActionBar</string>
+<string name="code1">getActionBar().setBackgroundDrawable(new ColorDrawable(0xff333333));</string>
+<string name="chint2">Enable the home button</string>
+<string name="code2">getActionBar().setHomeButtonEnabled(true);</string>
+<string name="chint3">Navigate the slide drawer into right to left side.</string>
+<string name="code3">public boolean onOptionsItemSelected(MenuItem item) {
+				if (item != null &amp;&amp; item.getItemId() == android.R.id.home) {
+					if (mDrawerLayout.isDrawerOpen(Gravity.RIGHT)) {
+						// Notice the Gravity.Right
+						mDrawerLayout.closeDrawer(Gravity.RIGHT);
+					} else {
+						mDrawerLayout.openDrawer(Gravity.RIGHT);
+					}
+				}
+				return false;
+			}</string>
+</resources>

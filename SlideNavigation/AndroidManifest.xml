@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ind.slidenavigation"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name">
+        <activity
+            android:name="com.ind.slidenavigation.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.ind.slidenavigation.FragmentList"  android:theme="@android:style/Theme.Black.NoTitleBar"></activity>
+        <activity android:name="com.ind.slidenavigation.CodeView"  android:theme="@android:style/Theme.Black.NoTitleBar"></activity>
+        <activity android:name="com.ind.slidenavigation.DialogActivity"  android:theme="@android:style/Theme.Dialog"></activity>
+        <activity android:name="com.ind.slidenavigation.NavPager"></activity>
+        <activity android:name="com.ind.slidenavigation.NavPager2"></activity>
+        <activity android:name="com.ind.slidenavigation.ColoredList" android:theme="@android:style/Theme.Black.NoTitleBar"></activity>
+        <activity android:name="com.ind.slidenavigation.NumsToChar" android:theme="@android:style/Theme.Black.NoTitleBar"></activity>
+        
+    </application>
+
+</manifest>
